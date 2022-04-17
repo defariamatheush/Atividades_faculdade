@@ -1,6 +1,5 @@
 /*
-Código desenvolvido para caráter educativo, onde poderá ter mais formas para reduzir o código, porém como não estarei sendo pago por 
-este código, vai ficar assim mesmo.
+Código desenvolvido para caráter educativo
 
 Desenvolvido por Matheus Henrique de Faria
 */
