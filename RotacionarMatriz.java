@@ -1,5 +1,6 @@
 /*
-Código desenvolvido para caráter educativo
+Código desenvolvido para caráter educativo, onde poderá ter mais formas para reduzir o código, porém como não estarei sendo pago por 
+este código, vai ficar assim mesmo.
 
 Desenvolvido por Matheus Henrique de Faria
 */
@@ -21,8 +22,7 @@ public class RotacionarMatriz {
         return novaMatriz;
     }
     //Método para fazer a iterar números na matriz
-    static int[][] iterandoMatriz(int[][] matriz) {
-        Scanner leitor = new Scanner(System.in);
+    static int[][] iterandoMatriz(int[][] matriz, Scanner leitor) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
                 System.out.println("Informe o valor para a posição " + (j + 1) + " do campo " + (i + 1));
@@ -30,7 +30,6 @@ public class RotacionarMatriz {
                 matriz[i][j] = leitor.nextInt();
             }
         }
-        leitor.close();
         return matriz;
     }
     //Método para randomizar os números dentro da matriz
@@ -69,7 +68,7 @@ public class RotacionarMatriz {
             matriz = randomizandoMatriz(matriz); //Matriz recebe valor do método randomizandoMatriz
 
         }else if (gerar == 2) {
-            matriz = iterandoMatriz(matriz); //Matriz recebe valor do método iterandoMatriz
+            matriz = iterandoMatriz(matriz, scanner); //Matriz recebe valor do método iterandoMatriz
         }
 
         //Parte que vai mostrar os números da matriz original
@@ -80,7 +79,7 @@ public class RotacionarMatriz {
             }
             System.out.print("\n");
         }
-
+        
         System.out.println("Quantos graus deseja rotacionar?");
         System.out.println("Informe quantos graus deseja rotacionar:");
         System.out.println("90°");
@@ -88,7 +87,6 @@ public class RotacionarMatriz {
         System.out.println("270°");
         System.out.println("360°");
         int opcao = scanner.nextInt();
-
         while (opcao % 90 != 0 || opcao > 360) {
                 System.out.println("Informe a opção correta!!");
                 System.out.println("Informe novamente a opção correta");
@@ -99,7 +97,6 @@ public class RotacionarMatriz {
                 System.out.println("360°");
                 opcao = scanner.nextInt();
         }
-
         novaMatriz = matriz;
         if (opcao % 90 == 0 && opcao <= 360) {
             int rotacao = opcao / 90;
