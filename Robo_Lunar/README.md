@@ -11,5 +11,7 @@ Crie um método para apresentar o status atual do robô.
 Apresente o diagrama de classe UML da classe desenvolvida e um diagrama de objeto.
 Dica: Utilize o README.md do repositorio github para exibir o diagrama de classes e outras informações necessárias.</i>
 
-<img src=”Robo_Lunar/DiagramaUML_POO.png”>
+<div>
+  <img src="Atividades_faculdade/Robo_Lunar/DiagramaUML_POO.png" alt="UML" width="600" height="400">
+</div>
 
