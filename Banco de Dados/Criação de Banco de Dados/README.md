@@ -132,7 +132,7 @@ CREATE TABLE `usuario` (
 
 ### Criando as chaves primárias (e algumas correções):
 
-Tabela ITEM
+1 - Tabela ITEM
 ```
 ALTER TABLE `item`
   ADD PRIMARY KEY (`cod_item`),
@@ -143,7 +143,7 @@ ALTER TABLE `item`
 
 ```
 
-Tabela NFEXP_PEDIDO
+2 - Tabela NFEXP_PEDIDO
 
 ```
 ALTER TABLE `nfexp_pedido`
@@ -151,16 +151,22 @@ ALTER TABLE `nfexp_pedido`
   ADD KEY `id_user` (`id_user`),
   ADD KEY `num_pedido` (`num_pedido`),
   ADD KEY `cod_item` (`cod_item`);
+  
+ALTER TABLE `item`
+  ADD CONSTRAINT `FK_ID_estoque` FOREIGN KEY (`FK_ID_estoque`) REFERENCES `posi_estoque` (`ID_estoque`),
+  ADD CONSTRAINT `FK_num_nf_exp` FOREIGN KEY (`FK_num_nf_exp`) REFERENCES `nf_exp` (`num_nf_exp`),
+  ADD CONSTRAINT `FK_num_pedido` FOREIGN KEY (`FK_num_pedido`) REFERENCES `pedido` (`num_pedido`);
+  
 ```
 
-Tabela NF_EXP
+3 - Tabela NF_EXP
 
 ```
 ALTER TABLE `nf_exp`
   ADD PRIMARY KEY (`num_nf_exp`);
 ```
 
-Tabela NF_RECE
+4 - Tabela NF_RECE
 
 ```
 ALTER TABLE `nf_rece`
@@ -168,9 +174,13 @@ ALTER TABLE `nf_rece`
   ADD UNIQUE KEY `num_nf_rece` (`num_nf_rece`) USING BTREE,
   ADD KEY `cod_item` (`FK_cod_item`),
   ADD KEY `id_user` (`id_user`);
+  
+ALTER TABLE `nf_rece`
+  ADD CONSTRAINT `cod_item` FOREIGN KEY (`FK_cod_item`) REFERENCES `item` (`cod_item`),
+  ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `usuario` (`id_user`);
 ```
 
-Tabela PEDIDO
+5 - Tabela PEDIDO
 
 ```
 ALTER TABLE `pedido`
@@ -178,111 +188,95 @@ ALTER TABLE `pedido`
   ADD UNIQUE KEY `num_pedido` (`num_pedido`) USING BTREE,
   ADD UNIQUE KEY `FK_cod_item` (`cod_item`) USING BTREE,
   ADD KEY `FK_id_user` (`FK_id_user`);
+  
+ ALTER TABLE `pedido`
+  ADD CONSTRAINT `FK_id_user` FOREIGN KEY (`FK_id_user`) REFERENCES `usuario` (`id_user`),
+  ADD CONSTRAINT `pedido_ibfk_1` FOREIGN KEY (`cod_item`) REFERENCES `item` (`cod_item`);
 ```
 
-Tabela POSI_ESTOQUE
+6 - Tabela POSI_ESTOQUE
 
 ```
 ALTER TABLE `posi_estoque`
   ADD PRIMARY KEY (`ID_estoque`),
   ADD UNIQUE KEY `ID_estoque` (`ID_estoque`) USING BTREE,
   ADD KEY `cod_item` (`FK_cod_item`) USING BTREE;
+  
+ ALTER TABLE `posi_estoque`
+  MODIFY `ID_estoque` int(18) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10123526;
+  
+ALTER TABLE `posi_estoque`
+  ADD CONSTRAINT `FK_cod_item` FOREIGN KEY (`FK_cod_item`) REFERENCES `item` (`cod_item`); 
+
 ```
 
-Tabela USUARIO
+7 - Tabela USUARIO
 
 ```
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_user`),
   ADD UNIQUE KEY `id_user` (`id_user`) USING BTREE;
-```
-
-Tabela POSI_ESTOQUE
-
-```
-
-ALTER TABLE `posi_estoque`
-  MODIFY `ID_estoque` int(18) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10123526;
-```
-
-Tabela USUARIO
-
-```
+  
 ALTER TABLE `usuario`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  
 ```
+### Inserindo valores nas tabelas
 
 Tabela ITEM
-
 ```
-
-ALTER TABLE `item`
-  ADD CONSTRAINT `FK_ID_estoque` FOREIGN KEY (`FK_ID_estoque`) REFERENCES `posi_estoque` (`ID_estoque`),
-  ADD CONSTRAINT `FK_num_nf_exp` FOREIGN KEY (`FK_num_nf_exp`) REFERENCES `nf_exp` (`num_nf_exp`),
-  ADD CONSTRAINT `FK_num_pedido` FOREIGN KEY (`FK_num_pedido`) REFERENCES `pedido` (`num_pedido`);
+INSERT INTO `item` (`cod_item`, `FK_num_nf_exp`, `FK_num_pedido`, `FK_ID_estoque`, `quant_estoque`, `data_rece`) VALUES
+('940971', 62312, '126516', 10123525, 100, '2022-05-24 00:22:01');
 ```
 
 Tabela NFEXP_PEDIDO
 
 ```
+INSERT INTO `nfexp_pedido` (`num_nf_exp`, `num_pedido`, `cod_item`, `id_user`) VALUES
+(62312, '126516', '940971', 1);
+```
 
-ALTER TABLE `nfexp_pedido`
-  ADD CONSTRAINT `nfexp_pedido_ibfk_1` FOREIGN KEY (`num_nf_exp`) REFERENCES `nf_exp` (`num_nf_exp`),
-  ADD CONSTRAINT `nfexp_pedido_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `usuario` (`id_user`),
-  ADD CONSTRAINT `nfexp_pedido_ibfk_3` FOREIGN KEY (`num_pedido`) REFERENCES `pedido` (`num_pedido`),
-  ADD CONSTRAINT `nfexp_pedido_ibfk_4` FOREIGN KEY (`cod_item`) REFERENCES `item` (`cod_item`);
+Tabela NF_EXP
 
+```
+INSERT INTO `nf_exp` (`num_nf_exp`, `CFOP_exp`, `remetente_exp`, `data_exp`) VALUES
+(62312, 127, 'Univille', '2022-05-10');
 ```
 
 Tabela NF_RECE
 
 ```
-
-ALTER TABLE `nf_rece`
-  ADD CONSTRAINT `cod_item` FOREIGN KEY (`FK_cod_item`) REFERENCES `item` (`cod_item`),
-  ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `usuario` (`id_user`);
+INSERT INTO `nf_rece` (`num_nf_rece`, `FK_cod_item`, `id_user`, `CFOP_rece`, `remetente_rece`, `destinatario_rece`, `transportadora_rece`, `quant_rece`, `data_rece`, `desc_item`, `valor_item`) VALUES
+(22222, '940971', 1, 5104, 'Udesc', 'Univille', 'Proprio', 100, '2022-05-24 22:06:46', 'Cadernos', 1);
 ```
 
 Tabela PEDIDO
 
 ```
-ALTER TABLE `pedido`
-  ADD CONSTRAINT `FK_id_user` FOREIGN KEY (`FK_id_user`) REFERENCES `usuario` (`id_user`),
-  ADD CONSTRAINT `pedido_ibfk_1` FOREIGN KEY (`cod_item`) REFERENCES `item` (`cod_item`);
+INSERT INTO `pedido` (`num_pedido`, `cod_item`, `FK_id_user`, `quant_exp`, `destinatario_exp`, `data_inclusao`, `transportadora_exp`, `status`) VALUES
+('126516', '940971', 1, 10, 'USP', '2022-05-13 19:27:44', 'JadLog', 'Expedido');
 ```
 
 Tabela POSI_ESTOQUE
 
 ```
-ALTER TABLE `posi_estoque`
-  ADD CONSTRAINT `FK_cod_item` FOREIGN KEY (`FK_cod_item`) REFERENCES `item` (`cod_item`);
-```
-
-### Inserindo valores nas tabelas
-
-INSERT INTO `item` (`cod_item`, `FK_num_nf_exp`, `FK_num_pedido`, `FK_ID_estoque`, `quant_estoque`, `data_rece`) VALUES
-('940971', 62312, '126516', 10123525, 100, '2022-05-24 00:22:01');
-
-INSERT INTO `nfexp_pedido` (`num_nf_exp`, `num_pedido`, `cod_item`, `id_user`) VALUES
-(62312, '126516', '940971', 1);
-
-INSERT INTO `nf_exp` (`num_nf_exp`, `CFOP_exp`, `remetente_exp`, `data_exp`) VALUES
-(62312, 127, 'Univille', '2022-05-10');
-
-INSERT INTO `nf_rece` (`num_nf_rece`, `FK_cod_item`, `id_user`, `CFOP_rece`, `remetente_rece`, `destinatario_rece`, `transportadora_rece`, `quant_rece`, `data_rece`, `desc_item`, `valor_item`) VALUES
-(22222, '940971', 1, 5104, 'Udesc', 'Univille', 'Proprio', 100, '2022-05-24 22:06:46', 'Cadernos', 1);
-
-INSERT INTO `pedido` (`num_pedido`, `cod_item`, `FK_id_user`, `quant_exp`, `destinatario_exp`, `data_inclusao`, `transportadora_exp`, `status`) VALUES
-('126516', '940971', 1, 10, 'USP', '2022-05-13 19:27:44', 'JadLog', 'Expedido');
-
 INSERT INTO `posi_estoque` (`ID_estoque`, `FK_cod_item`, `bloco_end`, `rua_end`, `coluna_end`, `andar_end`) VALUES
 (10123525, '940971', '1', '1', '1', '10');
+```
 
+Tabela USUARIO
+
+```
 INSERT INTO `usuario` (`id_user`, `funcao_user`, `nome_completo`, `setor`, `data_admissao`, `login`, `senha`) VALUES
 (1, 'Admin', 'Matheus Henrique de Faria', 'CEO', '2012-05-02', 'matheusf', 'teteu123');
+```
+
 
 ### Consultando todas as tabelas
 
+Consultando todos as tabelas
+
+```
 SELECT `usuario`.`id_user`, `item`.`cod_item`, `nf_exp`.`num_nf_exp`, `nf_rece`.`num_nf_rece`, `pedido`.`num_pedido`, `posi_estoque`.`ID_estoque`
 FROM `usuario`
 	, `item` 
@@ -290,7 +284,7 @@ FROM `usuario`
 	LEFT JOIN `nf_rece` ON `nf_rece`.`FK_cod_item` = `item`.`cod_item` 
 	LEFT JOIN `pedido` ON `item`.`FK_num_pedido` = `pedido`.`num_pedido` 
 	LEFT JOIN `posi_estoque` ON `item`.`FK_ID_estoque` = `posi_estoque`.`ID_estoque`;
-
+```
 
 
 
