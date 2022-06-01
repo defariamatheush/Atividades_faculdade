@@ -16,5 +16,5 @@ Dica: Utilize o README.md do repositorio github para exibir o diagrama de classe
 
 ### Diagrama de Classe UML:
 
-![DiagramaUML_POO](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Robo_Lunar/DiagramaUML_POO.png)
+![DiagramaUML_POO](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Programa%C3%A7%C3%A3o%20Orientado%20Obejtos/Robo_Lunar/DiagramaUML_POO.png)
 
