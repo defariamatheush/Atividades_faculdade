@@ -19,6 +19,12 @@
 
 O objetivo deste banco de dados é de trazer, de forma simplificada, o funcionamento de um estoque de um armazém. Desde o recebimento da Nota Fiscal, cadastramento do item no sistema até a expedição do pedido, com Nota Fiscal vinculada.
 
+## Diagramas
+
+![DiagramaUML_POO](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama1.png)
+![DiagramaUML_POO](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama2.png)
+![DiagramaUML_POO](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama3.png)
+
 ## Criando e inserindo valores no banco de dados
 
 ### Criando o banco de dados
