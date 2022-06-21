@@ -19,6 +19,17 @@
 
 O objetivo deste banco de dados é de trazer, de forma simplificada, o funcionamento de um estoque de um armazém. Desde o recebimento da Nota Fiscal, cadastramento do item no sistema até a expedição do pedido, com Nota Fiscal vinculada.
 
+## Diagramas
+
+### Diagrama com as tabelas e relacionamentos
+![Diagrama3](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama3.png)
+
+### Diagrama com as tabelas com as entidades (com a Chave Primária e Estrangeira) e seus respectivos relacionamentos
+![Diagrama2](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama2.png)
+
+### Diagrama final gerado pelo PhpMyAdmin, após ter feito todas as tabelas e criado as chaves primarias, junto com as chaves estrangeiras
+![Diagrama1](https://github.com/defariamatheush/Atividades_faculdade/blob/main/Banco%20de%20Dados/Cria%C3%A7%C3%A3o%20de%20Banco%20de%20Dados/Diagrama1.png)
+
 ## Criando e inserindo valores no banco de dados
 
 ### Criando o banco de dados
@@ -259,6 +270,7 @@ ALTER TABLE `posi_estoque`
 
 ### Inserindo valores nas tabelas
 
+```
 INSERT INTO `item` (`cod_item`, `FK_num_nf_exp`, `FK_num_pedido`, `FK_ID_estoque`, `quant_estoque`, `data_rece`) VALUES
 ('940971', 62312, '126516', 10123525, 100, '2022-05-24 00:22:01');
 
@@ -279,9 +291,11 @@ INSERT INTO `posi_estoque` (`ID_estoque`, `FK_cod_item`, `bloco_end`, `rua_end`,
 
 INSERT INTO `usuario` (`id_user`, `funcao_user`, `nome_completo`, `setor`, `data_admissao`, `login`, `senha`) VALUES
 (1, 'Admin', 'Matheus Henrique de Faria', 'CEO', '2012-05-02', 'matheusf', 'teteu123');
+```
 
 ### Consultando todas as tabelas
 
+```
 SELECT `usuario`.`id_user`, `item`.`cod_item`, `nf_exp`.`num_nf_exp`, `nf_rece`.`num_nf_rece`, `pedido`.`num_pedido`, `posi_estoque`.`ID_estoque`
 FROM `usuario`
 	, `item` 
@@ -289,7 +303,7 @@ FROM `usuario`
 	LEFT JOIN `nf_rece` ON `nf_rece`.`FK_cod_item` = `item`.`cod_item` 
 	LEFT JOIN `pedido` ON `item`.`FK_num_pedido` = `pedido`.`num_pedido` 
 	LEFT JOIN `posi_estoque` ON `item`.`FK_ID_estoque` = `posi_estoque`.`ID_estoque`;
-
+```
 
 
 
