@@ -1,0 +1,11 @@
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\bin\Release\Trabalho_Sistemas2.exe.config
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\bin\Release\Trabalho_Sistemas2.exe
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\bin\Release\Trabalho_Sistemas2.pdb
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.Form1.resources
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.Properties.Resources.resources
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.exe
+C:\Users\teteu\source\repos\Trabalho_Sistemas2\Trabalho_Sistemas2\obj\Release\Trabalho_Sistemas2.pdb
