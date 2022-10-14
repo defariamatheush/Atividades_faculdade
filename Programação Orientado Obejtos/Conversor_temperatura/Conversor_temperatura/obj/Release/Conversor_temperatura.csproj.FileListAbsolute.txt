@@ -1,0 +1,11 @@
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\bin\Release\Conversor_temperatura.exe.config
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\bin\Release\Conversor_temperatura.exe
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\bin\Release\Conversor_temperatura.pdb
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.Form1.resources
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.Properties.Resources.resources
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.exe
+C:\Users\teteu\source\repos\Conversor_temperatura\Conversor_temperatura\obj\Release\Conversor_temperatura.pdb
