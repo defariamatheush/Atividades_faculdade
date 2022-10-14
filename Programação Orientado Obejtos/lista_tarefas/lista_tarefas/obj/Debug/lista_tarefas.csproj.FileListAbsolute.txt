@@ -1,0 +1,10 @@
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\bin\Debug\lista_tarefas.exe.config
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\bin\Debug\lista_tarefas.exe
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\bin\Debug\lista_tarefas.pdb
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.Properties.Resources.resources
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.exe
+C:\Users\teteu\source\repos\lista_tarefas\lista_tarefas\obj\Debug\lista_tarefas.pdb
