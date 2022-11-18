@@ -1,0 +1,12 @@
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\bin\Debug\CadastroDeTarefas2.exe.config
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\bin\Debug\CadastroDeTarefas2.exe
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\bin\Debug\CadastroDeTarefas2.pdb
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.Tarefas.resources
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.Properties.Resources.resources
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.telaCadastroTarefas.resources
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.exe
+C:\Users\teteu\source\repos\CadastroDeTarefas2\CadastroDeTarefas2\obj\Debug\CadastroDeTarefas2.pdb
