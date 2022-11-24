@@ -1,0 +1,8 @@
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\bin\Debug\ExercicioV - SOP.exe.config
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\bin\Debug\ExercicioV - SOP.exe
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\bin\Debug\ExercicioV - SOP.pdb
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\obj\Debug\ExercicioV - SOP.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\obj\Debug\ExercicioV - SOP.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\obj\Debug\ExercicioV - SOP.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\obj\Debug\ExercicioV - SOP.exe
+C:\Users\teteu\source\repos\ExercicioV - SOP\ExercicioV - SOP\obj\Debug\ExercicioV - SOP.pdb
