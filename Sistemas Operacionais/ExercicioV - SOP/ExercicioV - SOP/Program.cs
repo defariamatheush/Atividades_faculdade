@@ -40,32 +40,22 @@ namespace ExercicioV___SOP {
                 }
                 frames.Add(entidadeFrames);
             }
-            //Console.WriteLine("Substituição de página FIFO: ");
-            //Console.Write("Frame:");
-            //funcoes.FIFO(frames);
-            //Console.WriteLine();
+            Console.WriteLine("Substituição de página FIFO: ");
+            Console.Write("Frame: "+ funcoes.FIFO(frames));
+            
+            Console.WriteLine();
 
-            //Console.WriteLine("Substituição de página LFU: ");
-            //Console.Write("Frame:");
-            //funcoes.FIFO(frames);
-            //Console.WriteLine();
+            Console.WriteLine("Substituição de página LFU: ");
+            Console.Write("Frame: "+ funcoes.LFU(frames));
+            Console.WriteLine();
 
-            //Console.WriteLine("Substituição de página LRU: ");
-            //Console.Write("Frame:");
-            //funcoes.FIFO(frames);
-            //Console.WriteLine();
+            Console.WriteLine("Substituição de página LRU: ");
+            Console.Write("Frame: "+ funcoes.LRU(frames));
+            Console.WriteLine();
 
-            //Console.WriteLine("Substituição de página NRU: ");
-            //Console.Write("Frame:");
-            //funcoes.FIFO(frames);
-            //Console.WriteLine();
-
-
-            Console.WriteLine(frames.Max(entidadeFrames.TempoUltimaReferencia);
-
-            foreach (var frame in frames) {
-                    
-            }
+            Console.WriteLine("Substituição de página NRU: ");
+            Console.Write("Frame: "+ funcoes.NRU(frames));
+            Console.WriteLine();
 
         }
     }
