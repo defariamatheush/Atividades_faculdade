@@ -1,0 +1,11 @@
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Debug\BatalhaNaval.exe.config
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Debug\BatalhaNaval.exe
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Debug\BatalhaNaval.pdb
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.Form1.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.Properties.Resources.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.exe
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Debug\BatalhaNaval.pdb
