@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaJogo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dt_Player = new System.Windows.Forms.DataGridView();
             this.A = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.B = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,14 +88,14 @@
             this.dt_Player.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_Player.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_Player.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_Player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_Player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dt_Player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_Player.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.A,
@@ -108,16 +108,16 @@
             this.H,
             this.I,
             this.J});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dt_Player.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dt_Player.Location = new System.Drawing.Point(28, 59);
-            this.dt_Player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt_Player.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_Player.Location = new System.Drawing.Point(21, 48);
+            this.dt_Player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dt_Player.MultiSelect = false;
             this.dt_Player.Name = "dt_Player";
             this.dt_Player.ReadOnly = true;
@@ -126,7 +126,7 @@
             this.dt_Player.RowTemplate.Height = 24;
             this.dt_Player.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dt_Player.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dt_Player.Size = new System.Drawing.Size(399, 274);
+            this.dt_Player.Size = new System.Drawing.Size(299, 223);
             this.dt_Player.TabIndex = 0;
             this.dt_Player.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_Player_CellContentClick);
             this.dt_Player.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_Player_CellDoubleClick);
@@ -138,7 +138,7 @@
             this.A.MinimumWidth = 6;
             this.A.Name = "A";
             this.A.ReadOnly = true;
-            this.A.Width = 45;
+            this.A.Width = 39;
             // 
             // B
             // 
@@ -210,11 +210,11 @@
             this.groupBox1.Controls.Add(this.player_restantes);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(20, 309);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(15, 251);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(393, 103);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(295, 84);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Navios";
@@ -222,36 +222,40 @@
             // player_afundados
             // 
             this.player_afundados.AutoSize = true;
-            this.player_afundados.Location = new System.Drawing.Point(123, 62);
+            this.player_afundados.Location = new System.Drawing.Point(92, 50);
+            this.player_afundados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.player_afundados.Name = "player_afundados";
-            this.player_afundados.Size = new System.Drawing.Size(14, 16);
+            this.player_afundados.Size = new System.Drawing.Size(13, 13);
             this.player_afundados.TabIndex = 6;
             this.player_afundados.Text = "0";
             // 
             // player_restantes
             // 
             this.player_restantes.AutoSize = true;
-            this.player_restantes.Location = new System.Drawing.Point(115, 34);
+            this.player_restantes.Location = new System.Drawing.Point(86, 28);
+            this.player_restantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.player_restantes.Name = "player_restantes";
-            this.player_restantes.Size = new System.Drawing.Size(14, 16);
+            this.player_restantes.Size = new System.Drawing.Size(13, 13);
             this.player_restantes.TabIndex = 5;
             this.player_restantes.Text = "0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 34);
+            this.label5.Location = new System.Drawing.Point(31, 28);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Restantes";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 62);
+            this.label4.Location = new System.Drawing.Point(31, 50);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Afundados:";
             // 
@@ -260,11 +264,11 @@
             this.gbx_player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.gbx_player.Controls.Add(this.groupBox1);
             this.gbx_player.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbx_player.Location = new System.Drawing.Point(13, 30);
-            this.gbx_player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_player.Location = new System.Drawing.Point(10, 24);
+            this.gbx_player.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbx_player.Name = "gbx_player";
-            this.gbx_player.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_player.Size = new System.Drawing.Size(439, 430);
+            this.gbx_player.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbx_player.Size = new System.Drawing.Size(329, 349);
             this.gbx_player.TabIndex = 8;
             this.gbx_player.TabStop = false;
             this.gbx_player.Text = "Jogador: [Nome do jogador]";
@@ -274,9 +278,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(960, 499);
+            this.pictureBox1.Size = new System.Drawing.Size(720, 405);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -287,11 +291,11 @@
             this.gbx_ia.Controls.Add(this.dt_ia);
             this.gbx_ia.Controls.Add(this.groupBox3);
             this.gbx_ia.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbx_ia.Location = new System.Drawing.Point(497, 30);
-            this.gbx_ia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_ia.Location = new System.Drawing.Point(373, 24);
+            this.gbx_ia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbx_ia.Name = "gbx_ia";
-            this.gbx_ia.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_ia.Size = new System.Drawing.Size(439, 430);
+            this.gbx_ia.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbx_ia.Size = new System.Drawing.Size(329, 349);
             this.gbx_ia.TabIndex = 9;
             this.gbx_ia.TabStop = false;
             this.gbx_ia.Text = "I.A: Barba negra";
@@ -305,14 +309,14 @@
             this.dt_ia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dt_ia.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dt_ia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dt_ia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_ia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dt_ia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dt_ia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -325,17 +329,17 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dt_ia.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt_ia.DefaultCellStyle = dataGridViewCellStyle4;
             this.dt_ia.Enabled = false;
-            this.dt_ia.Location = new System.Drawing.Point(20, 30);
-            this.dt_ia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dt_ia.Location = new System.Drawing.Point(15, 24);
+            this.dt_ia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dt_ia.MultiSelect = false;
             this.dt_ia.Name = "dt_ia";
             this.dt_ia.ReadOnly = true;
@@ -344,7 +348,7 @@
             this.dt_ia.RowTemplate.Height = 24;
             this.dt_ia.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dt_ia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dt_ia.Size = new System.Drawing.Size(399, 274);
+            this.dt_ia.Size = new System.Drawing.Size(299, 223);
             this.dt_ia.TabIndex = 11;
             this.dt_ia.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_ia_CellDoubleClick);
             // 
@@ -355,7 +359,7 @@
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 45;
+            this.dataGridViewTextBoxColumn1.Width = 39;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -427,11 +431,11 @@
             this.groupBox3.Controls.Add(this.ia_restantes);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(20, 309);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Location = new System.Drawing.Point(15, 251);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(393, 103);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(295, 84);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Navios";
@@ -439,9 +443,10 @@
             // ia_afundados
             // 
             this.ia_afundados.AutoSize = true;
-            this.ia_afundados.Location = new System.Drawing.Point(123, 62);
+            this.ia_afundados.Location = new System.Drawing.Point(92, 50);
+            this.ia_afundados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ia_afundados.Name = "ia_afundados";
-            this.ia_afundados.Size = new System.Drawing.Size(14, 16);
+            this.ia_afundados.Size = new System.Drawing.Size(13, 13);
             this.ia_afundados.TabIndex = 6;
             this.ia_afundados.Text = "0";
             this.ia_afundados.TextChanged += new System.EventHandler(this.ValorFinal);
@@ -449,36 +454,40 @@
             // ia_restantes
             // 
             this.ia_restantes.AutoSize = true;
-            this.ia_restantes.Location = new System.Drawing.Point(115, 34);
+            this.ia_restantes.Location = new System.Drawing.Point(86, 28);
+            this.ia_restantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ia_restantes.Name = "ia_restantes";
-            this.ia_restantes.Size = new System.Drawing.Size(14, 16);
+            this.ia_restantes.Size = new System.Drawing.Size(13, 13);
             this.ia_restantes.TabIndex = 5;
             this.ia_restantes.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 34);
+            this.label3.Location = new System.Drawing.Point(31, 28);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 16);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Restantes";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 62);
+            this.label6.Location = new System.Drawing.Point(31, 50);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 16);
+            this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Afundados:";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(802, 465);
+            this.button1.Location = new System.Drawing.Point(602, 378);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 27);
+            this.button1.Size = new System.Drawing.Size(100, 22);
             this.button1.TabIndex = 14;
             this.button1.Text = "Voltar";
             this.button1.UseVisualStyleBackColor = true;
@@ -487,9 +496,10 @@
             // inicio
             // 
             this.inicio.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inicio.Location = new System.Drawing.Point(662, 465);
+            this.inicio.Location = new System.Drawing.Point(496, 378);
+            this.inicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inicio.Name = "inicio";
-            this.inicio.Size = new System.Drawing.Size(134, 27);
+            this.inicio.Size = new System.Drawing.Size(100, 22);
             this.inicio.TabIndex = 13;
             this.inicio.Text = "Sair";
             this.inicio.UseVisualStyleBackColor = true;
@@ -497,11 +507,11 @@
             // 
             // TelaJogo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(960, 499);
+            this.ClientSize = new System.Drawing.Size(720, 405);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.inicio);
             this.Controls.Add(this.gbx_ia);
@@ -509,7 +519,6 @@
             this.Controls.Add(this.gbx_player);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaJogo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Batalha Naval";

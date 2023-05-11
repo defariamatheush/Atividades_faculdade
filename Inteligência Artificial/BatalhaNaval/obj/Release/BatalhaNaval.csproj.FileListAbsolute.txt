@@ -1,0 +1,13 @@
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Release\BatalhaNaval.exe.config
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Release\BatalhaNaval.exe
+C:\Users\teteu\source\repos\BatalhaNaval\bin\Release\BatalhaNaval.pdb
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.csproj.AssemblyReference.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.csproj.SuggestedBindingRedirects.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.TelaInicio.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.TelaJogo.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.Properties.Resources.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.TelaSobre.resources
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.csproj.GenerateResource.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.csproj.CoreCompileInputs.cache
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.exe
+C:\Users\teteu\source\repos\BatalhaNaval\obj\Release\BatalhaNaval.pdb

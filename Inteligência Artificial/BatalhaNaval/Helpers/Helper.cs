@@ -13,7 +13,9 @@ namespace BatalhaNaval.Helpers
         public void AdicionarLinhas(DataGridView dataGrid)
         {
             for (int x = 0; x <= 9; x++)
+            {
                 dataGrid.Rows.Add();
+            }                
         }
 
         public void ColocarCor(DataGridView dataGrid,int x,int y,Color cor)

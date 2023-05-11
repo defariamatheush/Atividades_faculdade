@@ -123,25 +123,31 @@ namespace BatalhaNaval
         {
             if (dt_ia.Enabled == true && vezJogador == true)
             {
+                bool resultado = false;
                 Posicoes posicoes = new Posicoes();
                 posicoes.X = dt_ia.CurrentCell.RowIndex;
                 posicoes.Y = dt_ia.CurrentCell.ColumnIndex;
-                bool resultado = controllerStart.VerificarPosicao(posicoes,posicoesIa);
-                if (resultado == false)
+                if (dt_ia.Rows [posicoes.X].Cells [posicoes.Y].Style.BackColor.Name != "Orange" && dt_ia.Rows [posicoes.X].Cells [posicoes.Y].Style.BackColor.Name != "Red")
                 {
-                    MessageBox.Show("Errou! Vez do adversário!");
-                    helper.ColocarCor(dt_ia,posicoes.X,posicoes.Y,Color.Orange);
-                    vezJogador = false;
-                    Start();
+                    resultado = controllerStart.VerificarPosicao(posicoes,posicoesIa);
+                    if (resultado == false)
+                    {
+                        MessageBox.Show("Errou! Vez do adversário!");
+                        helper.ColocarCor(dt_ia,posicoes.X,posicoes.Y,Color.Orange);
+                        vezJogador = false;
+                        Start();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Navio afundado, sua vez novamente");
+                        helper.ColocarCor(dt_ia,posicoes.X,posicoes.Y,Color.Red);
+                        controllerStart.AdicionarAfundados("IA");
+                        vezJogador = true;
+                        Start();
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("Navio afundado, sua vez novamente");
-                    helper.ColocarCor(dt_ia,posicoes.X,posicoes.Y,Color.Red);
-                    controllerStart.AdicionarAfundados("IA");
-                    vezJogador = true;
-                    Start();
-                }
+                    MessageBox.Show("Você já marcou essa parte");
             }
         }
         private void ValorFinal(object sender,EventArgs e)
@@ -170,18 +176,6 @@ namespace BatalhaNaval
                     contPosPlayer += 1;
                     player_restantes.Text = contPosPlayer.ToString();
                     Contador();
-                }
-
-            }
-            else
-            {
-                if (dt_ia.Rows [posicoes.X].Cells [posicoes.Y].Style.BackColor == Color.Orange)
-                {
-                    MessageBox.Show("Posição já foi usada");
-                }
-                else if (dt_ia.Rows [posicoes.X].Cells [posicoes.Y].Style.BackColor == Color.Red)
-                {
-                    MessageBox.Show("Posição já foi estourada");
                 }
             }
         }
