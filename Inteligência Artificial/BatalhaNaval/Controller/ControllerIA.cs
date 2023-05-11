@@ -19,7 +19,7 @@ namespace BatalhaNaval.Controller
         Helper helper = new Helper(); 
         public List<Posicoes> GerarCampos(DataGridView dataGrid)
         {
-            Label ia_restantes = (Label)Application.OpenForms ["Form1"].Controls.Find("ia_restantes",true).FirstOrDefault();
+            Label ia_restantes = (Label)Application.OpenForms ["TelaJogo"].Controls.Find("ia_restantes",true).FirstOrDefault();
             Random randNum = new Random();
             for (int cont = 0; cont <= 9; cont++)
             {
@@ -44,7 +44,7 @@ namespace BatalhaNaval.Controller
         public bool VezInteligenciaArtficial(List<Posicoes> posicoesIa,List<Posicoes> posicoesPlayer)
         {
             bool vezJogador = false;
-            DataGridView dataGrid_Player = (DataGridView)Application.OpenForms ["Form1"].Controls.Find("dt_Player",true).FirstOrDefault();
+            DataGridView dataGrid_Player = (DataGridView)Application.OpenForms ["TelaJogo"].Controls.Find("dt_Player",true).FirstOrDefault();
             Posicoes posicaoIa = GerarPosicoes(dataGrid_Player);
 
             string resultado = controllerStart.VerificarPosicao(posicaoIa,posicoesPlayer,dataGrid_Player);

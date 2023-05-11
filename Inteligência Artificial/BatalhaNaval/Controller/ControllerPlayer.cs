@@ -17,8 +17,8 @@ namespace BatalhaNaval.Controller
         public bool VezPlayer(Posicoes posicaoPlayer)
         {
             bool vezJogador;
-            DataGridView dt_ia = (DataGridView)Application.OpenForms ["Form1"].Controls.Find("dt_ia",true).FirstOrDefault();
-            DataGridView dt_Player = (DataGridView)Application.OpenForms ["Form1"].Controls.Find("dt_Player",true).FirstOrDefault();
+            DataGridView dt_ia = (DataGridView)Application.OpenForms ["TelaJogo"].Controls.Find("dt_ia",true).FirstOrDefault();
+            DataGridView dt_Player = (DataGridView)Application.OpenForms ["TelaJogo"].Controls.Find("dt_Player",true).FirstOrDefault();
             bool resultado = true;
             if (resultado == true)
             {

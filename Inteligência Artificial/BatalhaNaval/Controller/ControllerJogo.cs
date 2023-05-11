@@ -15,10 +15,10 @@ namespace BatalhaNaval.Controller
     {
         public bool Start(bool vezJogador,List<Posicoes> posicoesIa,List<Posicoes> posicoesPlayer)
         {            
-            DataGridView dataGrid_Player = (DataGridView)Application.OpenForms ["Form1"].Controls.Find("dt_Player",true).FirstOrDefault();
-            DataGridView dataGrid_ia = (DataGridView)Application.OpenForms ["Form1"].Controls.Find("dt_ia",true).FirstOrDefault();
-            GroupBox gpbx_Player = (GroupBox)Application.OpenForms ["Form1"].Controls.Find("gbx_player",true).FirstOrDefault();
-            GroupBox gpbx_Ia = (GroupBox)Application.OpenForms ["Form1"].Controls.Find("gbx_ia",true).FirstOrDefault();
+            DataGridView dataGrid_Player = (DataGridView)Application.OpenForms ["TelaJogo"].Controls.Find("dt_Player",true).FirstOrDefault();
+            DataGridView dataGrid_ia = (DataGridView)Application.OpenForms ["TelaJogo"].Controls.Find("dt_ia",true).FirstOrDefault();
+            GroupBox gpbx_Player = (GroupBox)Application.OpenForms ["TelaJogo"].Controls.Find("gbx_player",true).FirstOrDefault();
+            GroupBox gpbx_Ia = (GroupBox)Application.OpenForms ["TelaJogo"].Controls.Find("gbx_ia",true).FirstOrDefault();
             ControllerIA controllerIA = new ControllerIA();
             ControllerPlayer controllerPlayer = new ControllerPlayer();
             Helper helper = new Helper();
@@ -91,17 +91,25 @@ namespace BatalhaNaval.Controller
 
         public void AdicionarAfundados(string navioAfundado)
         {
-            Label ia_afundados = (Label)Application.OpenForms ["Form1"].Controls.Find("ia_afundados",true).FirstOrDefault();
-            Label player_afundados = (Label)Application.OpenForms ["Form1"].Controls.Find("player_afundados",true).FirstOrDefault();
+            Label ia_afundados = (Label)Application.OpenForms ["TelaJogo"].Controls.Find("ia_afundados",true).FirstOrDefault();
+            Label player_afundados = (Label)Application.OpenForms ["TelaJogo"].Controls.Find("player_afundados",true).FirstOrDefault();
 
-            if(navioAfundado == "IA")
+            Label ia_restantes = (Label)Application.OpenForms ["TelaJogo"].Controls.Find("ia_restantes",true).FirstOrDefault();
+            Label player_restantes = (Label)Application.OpenForms ["TelaJogo"].Controls.Find("player_restantes",true).FirstOrDefault();
+            if (navioAfundado == "IA")
             {
+                double valorrestantes = Convert.ToDouble(ia_restantes.Text);
+                valorrestantes -= 1;
+                ia_restantes.Text = valorrestantes.ToString();
                 double valortxt = Convert.ToDouble(ia_afundados.Text);
                 valortxt += 1;
                 ia_afundados.Text = valortxt.ToString();
             }
             else if(navioAfundado == "Player")
             {
+                double valorrestantes = Convert.ToDouble(player_restantes.Text);
+                valorrestantes -= 1;
+                player_restantes.Text = valorrestantes.ToString();
                 double valortxt = Convert.ToDouble(player_afundados.Text);
                 valortxt += 1;
                 player_afundados.Text = valortxt.ToString();
